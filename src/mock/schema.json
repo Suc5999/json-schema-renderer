@@ -1,0 +1,58 @@
+[
+  {
+    "uuid": "1",
+    "name": "Username1",
+    "componentName": "text",
+    "label": "用户名",
+    "rules": [
+      {
+        "require": true
+      },
+      {
+        "email": true
+      },
+      {
+        "min": 10
+      }
+    ],
+    "events": [
+      {
+        "onKeyDown": "console.log(Username1.value)"
+      },
+      {
+        "onClick": "console.log('点击了用户名输入框')"
+      }
+    ]
+  },
+  {
+    "uuid": "2",
+    "name": "Password1",
+    "componentName": "password",
+    "label": "密码",
+    "rules": [
+      {
+        "required": true,
+        "max": 32
+      }
+    ],
+    "events": [
+      {
+        "onKeyDown": "console.log(Username1.value)"
+      },
+      {
+        "onClick": "console.log('点击了用户密码输入框')"
+      }
+    ]
+  },
+  {
+    "uuid": "3",
+    "name": "Button1",
+    "componentName": "button",
+    "text": "提交",
+    "events": [
+      {
+        "onClick": "message.info(`账号：${Username1.value}  密码：${Password1.value}`)"
+      }
+    ]
+  }
+]
